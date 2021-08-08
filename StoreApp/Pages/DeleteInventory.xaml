@@ -1,0 +1,24 @@
+﻿<Page x:Class="StoreApp.Pages.DeleteInventory"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:StoreApp.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="DeleteInventory">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="6*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="deleteButton" Click="deleteButton_Click" Background="Red" FontSize="32" FontWeight="Bold">DELETE</Button>
+        <StackPanel Grid.Row="1" Background="Green">
+            <ComboBox x:Name="Combox" Margin="50" Width="500"></ComboBox>
+        </StackPanel>
+        <Button x:Name="goBack" Click="goBack_Click"  Grid.Row="2" Background="Blue" FontSize="32" FontWeight="Bold">GO BACK</Button>
+    </Grid>
+</Page>

@@ -1,0 +1,30 @@
+﻿<Page x:Class="StoreApp.Pages.CategoriesPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:StoreApp.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CategoriesPage">
+
+    <Grid>
+
+        <TextBlock Background="White"></TextBlock>
+        
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <TextBox x:Name="NewCategoryName" Grid.Row="1" FontSize="36" TextAlignment="Center" VerticalAlignment="Center"/>
+            <Button Click="AddCategory" Grid.Row="2" FontSize="36">Add Comment</Button>
+            <Button Click="GoBack" FontSize="24" Grid.Row="4">Go to Main Page</Button>
+            <Button x:Name="goHome" Click="goBack_Click" Background="White" FontSize="32" FontWeight="Bold">AWESOME STORE</Button>
+
+        </Grid>
+    </Grid>
+</Page>

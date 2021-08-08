@@ -1,0 +1,47 @@
+﻿<Page x:Class="StoreApp.Pages.ProductsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:StoreApp.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ProductsPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <StackPanel Background="White" Orientation="Horizontal">
+            <Image Margin="5" Height="250" Source="C:\Users\Ray\source\repos\StoreApp\StoreApp\Pics\TSAJ1High.jpg"></Image>
+            <Label FontWeight="Bold" Content="Travis Scott High $1,000" Height="46"/>
+        </StackPanel>
+        <StackPanel>
+            <Button x:Name="TSH" Click="TSH_Click" Margin="20" Width="80" Height="30" HorizontalAlignment="Right" Content="Add to Cart"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="3"  Background="White" Orientation="Horizontal">
+            <Image HorizontalAlignment="left" Margin="5" Height="200" Source="C:\Users\Ray\source\repos\StoreApp\StoreApp\Pics\RYZY.jpg"></Image>
+            <Label FontWeight="Bold" Content="Yeezy Red October $2,000" Height="42"/>
+        </StackPanel>
+        <StackPanel Grid.Column="3">
+            <Button x:Name="redOctober" Click="redOctober_Click" Margin="20" Width="80" Height="30" HorizontalAlignment="Right">Add to Cart</Button>
+        </StackPanel>
+
+        <StackPanel Grid.Column="0" Grid.Row="4" Background="White" Orientation="Horizontal">
+            <Image HorizontalAlignment="left" Margin="5" Height="200" Source="C:\Users\Ray\source\repos\StoreApp\StoreApp\Pics\BYZY.jpg"></Image>
+            <Label FontWeight="Bold" Content="Yeezy Solar $3,000" Height="34" Width="76"/>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="4">
+            <Button x:Name="solar" Click="solar_Click" Margin="20" Width="80" Height="30" HorizontalAlignment="Right">Add to Cart</Button>
+        </StackPanel>
+
+        <Button x:Name="goBack" Click="GoBack"  Grid.Column="3" Grid.Row="4" Background="White" BorderThickness="1" FontSize="32" FontWeight="Bold" FontStyle="Italic">GO BACK</Button>
+    </Grid>
+</Page>
